@@ -31,16 +31,16 @@ RUN apt-get update \
 RUN go get -u golang.org/x/lint/golint
 
 # Make directory
-RUN mkdir -p $GOPATH/src/github.com/dmacvicar/
+RUN mkdir -p $GOPATH/src/github.com/kimcharli/
 
 # Set Work Directory for Clone
-WORKDIR $GOPATH/src/github.com/dmacvicar/
+WORKDIR $GOPATH/src/github.com/kimcharli/
 
 # Clone Project
-RUN git clone https://github.com/dmacvicar/terraform-provider-libvirt.git
+RUN git clone https://github.com/kimcharli/terraform-provider-libvirt.git
 
 # Set Workdir for bin build
-WORKDIR $GOPATH/src/github.com/dmacvicar/terraform-provider-libvirt
+WORKDIR $GOPATH/src/github.com/kimcharli/terraform-provider-libvirt
 
 # Checkout Version and download go dependencies
 RUN git checkout $VERSION && env GO111MODULE=on go mod download

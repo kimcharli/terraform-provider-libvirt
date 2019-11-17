@@ -1,4 +1,4 @@
-module github.com/dmacvicar/terraform-provider-libvirt
+module github.com/kimcharli/terraform-provider-libvirt
 
 require (
 	github.com/ajeddeloh/go-json v0.0.0-20170920214419-6a2fe990e083 // indirect
